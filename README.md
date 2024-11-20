@@ -1,1 +1,1 @@
-# CMiNet_shinyAPP
+# CMiNetShinyAPP
