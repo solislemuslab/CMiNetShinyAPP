@@ -45,5 +45,15 @@ docs/
 # translation temp files
 po/*~
 
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
 # RStudio Connect folder
 rsconnect/
