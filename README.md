@@ -36,6 +36,7 @@ CMiNet ShinyAPP employs a range of established algorithms to construct individua
 - SPRING ([SPRING package](https://github.com/GraceYoon/SPRING))
 - CMIMN ([CMIMN package](https://github.com/solislemuslab/CMIMN))
 - gCoda ([R code on GitHub](https://github.com/huayingfang/gCoda))
+
 CMiNet combines these networks into a single, weighted consensus network, leveraging the strengths of each method to provide a comprehensive and reliable representation of microbial interactions.
 
 ## CMiNet Shiny App
