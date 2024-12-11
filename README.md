@@ -1,5 +1,4 @@
 # CMiNetShinyAPP
-## CMiNet ShinyAPP
 <img src="image/logo.png" style="width:13%;" align=right>
 
 [![GitHub license](https://img.shields.io/github/license/solislemuslab/CMiNet?color=yellow)](https://github.com/solislemuslab/CMiNetShinyAPP/blob/main/LICENSE)
@@ -10,9 +9,9 @@
 
 ## Description
 <div align="justify">
-CMiNetShinyAPP is a ShinyAPP designed to generate consensus microbiome networks by integrating results from multiple network construction algorithms. This tool is specifically tailored for microbiome data, where capturing the intricate relationships between microbial taxa is essential to understanding complex biological systems and their impacts on health and disease.
+CMiNetShinyApp is a Shiny application designed to construct consensus microbiome networks by integrating results from multiple network construction algorithms. Tailored specifically for microbiome data, this tool captures the intricate relationships between microbial taxa, offering insights into complex biological systems and their impacts on health and disease.
 
-The ShinyAPP employs a range of established algorithms, including Pearson and Spearman correlation, Biweight midcorrelation, Sparse Correlations for Compositional data (SparCC), Sparse InversE Covariance estimation for Ecological Association and Statistical Inference (SpiecEasi), Semi-Parametric Rank-based Correlation and Partial Correlation Estimation (SPRING), Generalized Co-Occurrence Differential Abundance analysis (gCoda), Correlation Inference for Compositional Data through Lasso (CCLasso), and a novel algorithm based on conditional mutual information (c_MI). These algorithms construct individual microbial association networks, which CMiNet then combines into a single, weighted consensus network. By leveraging the strengths of each method, CMiNet provides a comprehensive and reliable representation of microbial interactions.
+The CMiNetShinyApp incorporates a variety of established algorithms, including Pearson and Spearman correlation, Biweight midcorrelation, Sparse Correlations for Compositional data (SparCC), Sparse InversE Covariance estimation for Ecological Association and Statistical Inference (SpiecEasi), Semi-Parametric Rank-based Correlation and Partial Correlation Estimation (SPRING), Generalized Co-Occurrence Differential Abundance analysis (gCoda), Correlation Inference for Compositional Data through Lasso (CCLasso), and a novel algorithm based on conditional mutual information (CMIMN). These algorithms generate individual microbial association networks, which CMiNet combines into a single, weighted consensus network. By integrating the strengths of each method, CMiNet delivers a robust and comprehensive representation of microbial interactions.
 </div>
 <img src="image/CMiNet-Page-2.jpg" style="width:45%;" align=right>
 
