@@ -41,7 +41,7 @@ CMiNet combines these networks into a single, weighted consensus network, levera
 
 ## CMiNet Shiny App
 The CMiNet Shiny App simplifies the process of constructing, visualizing, and analyzing microbiome networks. It includes the following features:
-- CMiNet: Construct consensus networks, select algorithms, and download results.
+- CMiNet: Construct a weighted network, select algorithms, and download results.
 - Visualization: This visualization compares network structures based on four different thresholds. Below each network depicts the number of nodes with degree > 0 (NN Deg >0), the number of edges (N Edges), and the maximum degree value in the network (Max-Deg).
 - Final Network: Explore the final network based on user-defined thresholds.
 - About: Access detailed information about running and interpreting CMiNet results.
@@ -50,7 +50,7 @@ The CMiNet Shiny App simplifies the process of constructing, visualizing, and an
 CMiNetShinyApp  is an open source project, and the source code is available at in this repository with the main web app code in app.R.
 
 ### Running the web apps locally
-Users with strong programming skills might like to modify the existing R code and run a version of the web apps locally.
+Users with strong programming skills might like to  run a version of the web apps locally.
 
 The first step is to download the code. You can do this with git:
 ```bash
@@ -111,17 +111,9 @@ The CMiNet ShinyApp enables users to customize the default parameters of each al
 - gcoda_params = list(counts = FALSE, pseudo = 0.5, lambda.min.ratio = 1e-4, nlambda = 15, ebic.gamma = 0.5)
 - c_MI_params = list(quantitative = TRUE, q1 = 0.7, q2 = 0.95)
 - cclasso_params = list(counts = FALSE, pseudo = 0.5, k_cv = 3, lam_int = c(1e-4, 1), k_max = 20, n_boot = 20)
-### Construct weighted network by CMiNet Function
-- Description: The CMiNet function constructs a consensus network from microbiome data by integrating multiple network construction algorithms. This approach combines individual microbial association networks into a single weighted network, enhancing reliability by leveraging the strengths of each method.
-- Parameters:
-  - data: The input microbiome abundance matrix, where rows represent samples and columns represent taxa.
-  - quantitative (default = TRUE): Set to TRUE if the data contains quantitative abundance counts; set to FALSE otherwise.
-  - Quantile Threshold: The threshold value used for threshold-dependent algorithms (pearson, spearman, bicor, SparCC, and CCLasso), set to the 0.95 quantile by default to promote sparsity in the consensus network.
-  - Algorithm-Specific Parameters:
-    - pearson, spearman, bicor: Boolean flags to enable these correlation-based methods. When set to TRUE, the algorithm runs on the data; when set to FALSE, it is excluded from the analysis.
-    - SparCC, SpiecEasi_mb, SpiecEasi_glasso, SPRING, gCoda, c_MI, CCLasso: Lists of parameters for each algorithm, allowing customization of settings such as number of cores (ncores), threshold values (lambda.min.ratio), and other algorithm-specific configurations.
-    - Setting the enabled parameter to TRUE for an algorithm will include it in the consensus network construction, while setting it to FALSE will skip the algorithm, allowing users to select a subset of methods for analysis.
 
+## Sample Data Result from CMiNet ShinyApp
+The following figure represents the result of running the CMiNet ShinyApp on the sample dataset. This visualization was generated using the Visualization Tab, showcasing the weighted microbiome network constructed from the sample data. The figure illustrates the intricate microbial associations derived from the consensus network methodology.
 <img src="image/network_9,8,7,6.jpeg" style="width:90%;">
 
 
