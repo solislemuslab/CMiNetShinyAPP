@@ -72,10 +72,12 @@ devtools::install_github("GraceYoon/SPRING")
 
 
 If you encounter errors during installation, ensure you manually install any missing dependencies.
-Run the App: Open the project file CMiNet_shinyapp.Rproj and run the app using:
+3- Run the App: Open the project file CMiNet_shinyapp.Rproj and run the app using:
 ```bash
 shiny::runApp()
 ```
+4. Running Instructions:
+Once the app is running, you can upload your microbiome dataset, select algorithms, and explore results in the visualization tab. Use the sample dataset provided to familiarize yourself with the workflow.
 
 
 
