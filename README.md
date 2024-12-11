@@ -47,51 +47,33 @@ The CMiNet Shiny App simplifies the process of constructing, visualizing, and an
 - About: Access detailed information about running and interpreting CMiNet results.
 
 ## Source Code
-CMiNetShinyApp  is an open source project, and the source code is available at in this repository with the main web app code in app.R.
+The CMiNetShinyApp is an [open-source project](), and its source code is available in this repository. The main web app code is located in app.R.
 
 ### Running the web apps locally
-Users with strong programming skills might like to  run a version of the web apps locally.
+To run the app locally, follow these steps:
+1- Clone the Repository: Download the code from GitHub using the following command:
 
-The first step is to download the code. You can do this with git:
 ```bash
 git clone https://github.com/solislemuslab/CMiNetShinyAPP.git
 ```
 
-Make sure you have the dependencies installed. You can use the following command in R to install all the package dependencies:
+2- Install Required Dependencies: Ensure all required R packages are installed. Use the following script to install them:
 
 ```bash
-install.packages("devtools")
+install.packages(c("devtools", "shiny", "shinyWidgets", "shinyBS", 
+                   "igraph", "tidyverse", "visNetwork"))
+
 devtools::install_github("solislemuslab/CMiNet")
-```
-If there are any errors during installation, please install the missing dependencies manually.
-In particular the automatic installation of SPRING and SpiecEasi (only available on GitHub) does sometimes not work. These packages can be installed as follows (the order is important because SPRING depends on SpiecEasi):
-```bash
+
+# Install dependencies for SPRING and SpiecEasi (order matters):
 devtools::install_github("zdk123/SpiecEasi@v1.1.1")
 devtools::install_github("GraceYoon/SPRING")
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install(c("AnnotationDbi", "GO.db", "preprocessCore", "impute"))
-library(AnnotationDbi)
-library(GO.db)
-library(preprocessCore)
-library(impute)
-library(SpiecEasi)
-library(SPRING)
 ```
-Other Dependecy
 
+
+If you encounter errors during installation, ensure you manually install any missing dependencies.
+Run the App: Open the project file CMiNet_shinyapp.Rproj and run the app using:
 ```bash
-list.of.packages <- c(
-  "shiny", 
-  "shinyWidgets", 
-  "shinyBS",
-  "igraph",
-  "tidyverse",
-  "visNetwork")
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[, "Package"])]
-if(length(new.packages)) install.packages(new.packages)
-
-We recommend run it in the downloaded CMiNet_shinyapp.Rproj project: 
 shiny::runApp()
 ```
 
