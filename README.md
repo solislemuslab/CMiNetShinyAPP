@@ -22,6 +22,7 @@ The CMiNetShinyApp incorporates a variety of established algorithms, including P
   - [Running the web apps locally](#Running-the-web-apps-locally)
 - [CMiNet ShinyApp Sample Data](#CMiNet-ShinyApp-Sample-Data)
   - [Define the parameter on all Algorithms](#Define-the-parameter-on-all-Algorithms)
+  - [Sample Data Result from CMiNet ShinyApp](#Sample-Data-Result-from-CMiNet-ShinyApp)
 
 
 ## Methods Included in CMiNet ShinyAPP
