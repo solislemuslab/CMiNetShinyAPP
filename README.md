@@ -93,7 +93,7 @@ The CMiNet ShinyApp enables users to customize the default parameters of each al
 - spiecEasi_glasso_params =params = list(method = 'glasso', lambda.min.ratio = 1e-2, nlambda = 15, pulsar.params = list(rep.num = 50), ncores = 4))
 - spring_params = list(Rmethod = "original", quantitative = TRUE, ncores = 5, lambdaseq = "data-specific", nlambda = 15, rep.num = 20)
 - gcoda_params = list(counts = FALSE, pseudo = 0.5, lambda.min.ratio = 1e-4, nlambda = 15, ebic.gamma = 0.5)
-- c_MI_params = list(quantitative = TRUE, q1 = 0.7, q2 = 0.95)
+- c_MI_params = list(quantitative = TRUE, q1 = 0.9, q2 = 0.95)
 - cclasso_params = list(counts = FALSE, pseudo = 0.5, k_cv = 3, lam_int = c(1e-4, 1), k_max = 20, n_boot = 20)
 
 ## Sample Data Result from CMiNet ShinyApp
