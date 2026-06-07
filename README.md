@@ -17,7 +17,7 @@ The CMiNetShinyApp incorporates a variety of established algorithms, including P
 <img src="image/CMiNet-Page-2.jpg" style="width:45%;" align=right>
 
 ## Shiny App
-We developed CMiNet, an R package and interactive Shiny App https:// cminet.wid. wisc. ede that enables consensus microbiome network construction by
+We developed CMiNet, an R package and interactive Shiny App https://cminet.wid.wisc. ede that enables consensus microbiome network construction by
 integrating up to 10 widely used inference algorithms.
 
 
@@ -53,7 +53,7 @@ The CMiNet Shiny App simplifies the process of constructing, visualizing, and an
 - About: Access detailed information about running and interpreting CMiNet results.
 
 ## Source Code
-The CMiNetShinyApp is an [open-source project](https://cminet.wid. wisc), and its source code is available in this repository. The main web app code is located in app.R.
+The CMiNetShinyApp is an [open-source project](https://cminet.wid.wisc), and its source code is available in this repository. The main web app code is located in app.R.
 
 ### Running the web apps locally
 To run the app locally, follow these steps:
