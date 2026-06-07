@@ -53,7 +53,7 @@ The CMiNet Shiny App simplifies the process of constructing, visualizing, and an
 - About: Access detailed information about running and interpreting CMiNet results.
 
 ## Source Code
-The CMiNetShinyApp is an [open-source project](https:// cminet.wid. wisc), and its source code is available in this repository. The main web app code is located in app.R.
+The CMiNetShinyApp is an [open-source project](https://cminet.wid. wisc), and its source code is available in this repository. The main web app code is located in app.R.
 
 ### Running the web apps locally
 To run the app locally, follow these steps:
