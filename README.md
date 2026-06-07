@@ -7,7 +7,6 @@
 [![GitHub Releases](https://img.shields.io/github/v/release/solislemuslab/CMiNetShinyAPP?display_name=tag)](https://github.com/solislemuslab/CMiNetShinyAPP/releases)
 [![DOI](https://zenodo.org/badge/891534890.svg)](https://doi.org/10.5281/zenodo.17460049)
 
-
 ## Description
 <div align="justify">
 CMiNetShinyApp is a Shiny application designed to construct consensus microbiome networks by integrating results from multiple network construction algorithms. Tailored specifically for microbiome data, this tool captures the intricate relationships between microbial taxa, offering insights into complex biological systems and their impacts on health and disease.
