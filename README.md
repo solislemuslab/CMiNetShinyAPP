@@ -16,8 +16,6 @@ The CMiNetShinyApp incorporates a variety of established algorithms, including P
 </div>
 <img src="image/CMiNet-Page-2.jpg" style="width:45%;" align=right>
 
-
-
 ## Shiny App
 We developed CMiNet, an R package and interactive Shiny App (https:// cminet.wid. wisc. edu) that enables consensus microbiome network construction by
 integrating up to 10 widely used inference algorithms.
